@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | Horizon Institute of Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">🎓 Horizon <span>Institute</span></a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html" class="active">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Academic Programs</h1>
+        <p>Filter our accredited departments below to find the right program for your career goals.</p>
+
+        <div class="filter-group">
+            <button class="filter-btn active" onclick="filterCourses('all', this)">All Faculties</button>
+            <button class="filter-btn" onclick="filterCourses('tech', this)">Computing & IT</button>
+            <button class="filter-btn" onclick="filterCourses('business', this)">Business & Economics</button>
+            <button class="filter-btn" onclick="filterCourses('science', this)">Applied Sciences</button>
+        </div>
+
+        <div class="grid-3" id="course-container">
+            <div class="card course-card" data-category="tech">
+                <h3>BSc. Computer Science</h3>
+                <p><strong>Duration:</strong> 4 Years</p>
+                <p>Focuses on software engineering, artificial intelligence, and cloud architecture.</p>
+            </div>
+            <div class="card course-card" data-category="tech">
+                <h3>Diploma in Cyber Security</h3>
+                <p><strong>Duration:</strong> 2 Years</p>
+                <p>Hands-on network defense, ethical hacking, and digital forensics training.</p>
+            </div>
+            <div class="card course-card" data-category="business">
+                <h3>Bachelor of Commerce</h3>
+                <p><strong>Duration:</strong> 4 Years</p>
+                <p>Specializations in Finance, Accounting, Marketing, and Supply Chain.</p>
+            </div>
+            <div class="card course-card" data-category="science">
+                <h3>BSc. Environmental Science</h3>
+                <p><strong>Duration:</strong> 4 Years</p>
+                <p>Research-driven program tackling climate sustainability and conservation.</p>
+            </div>
+            <div class="card course-card" data-category="business">
+                <h3>MBA Executive</h3>
+                <p><strong>Duration:</strong> 2 Years</p>
+                <p>Designed for working professionals aiming for senior management roles.</p>
+            </div>
+            <div class="card course-card" data-category="science">
+                <h3>BSc. Biotechnology</h3>
+                <p><strong>Duration:</strong> 4 Years</p>
+                <p>Modern laboratory techniques in genetics, microbiology, and healthcare.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="academics.html">Academics</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="sitemap.html">Site Map</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; 2026 Horizon Institute of Technology. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

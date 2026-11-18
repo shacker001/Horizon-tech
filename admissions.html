@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Horizon Institute of Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">🎓 Horizon <span>Institute</span></a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Admissions & Fee Estimator</h1>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Step 1: Check Requirements</h3>
+                <p>Ensure you meet the minimum grade requirements for your chosen diploma or degree program.</p>
+            </div>
+            <div class="card">
+                <h3>Step 2: Submit Documents</h3>
+                <p>Upload certified copies of your academic transcripts, national ID/passport, and passport photo.</p>
+            </div>
+            <div class="card">
+                <h3>Step 3: Receive Offer</h3>
+                <p>Applications are reviewed within 5 working days. Admission letters are sent via email.</p>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 2rem;">
+            <h3>Interactive Semester Fee Estimator</h3>
+            <div class="form-group">
+                <label for="program-select">Select Program Level:</label>
+                <select id="program-select" onchange="calculateFee()">
+                    <option value="45000">Diploma Program (Base: 45,000 / sem)</option>
+                    <option value="75000">Undergraduate Degree (Base: 75,000 / sem)</option>
+                    <option value="110000">Postgraduate / Masters (Base: 110,000 / sem)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="hostel-check" style="width: auto;" onchange="calculateFee()">
+                    Include On-Campus Accommodation (+ 20,000 / sem)
+                </label>
+            </div>
+            <p style="font-size: 1.2rem; font-weight: bold; color: var(--primary);">
+                Estimated Total per Semester: <span id="fee-output">45,000</span>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="academics.html">Academics</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="sitemap.html">Site Map</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; 2026 Horizon Institute of Technology. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
