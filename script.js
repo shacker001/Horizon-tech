@@ -17,7 +17,7 @@ function filterCourses(category, btnElement) {
             card.style.display = 'block';
         } else {
             card.style.display = 'none';
-        }
+        }       
     });
 }
 
